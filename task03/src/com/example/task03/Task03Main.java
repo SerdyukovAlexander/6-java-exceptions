@@ -1,16 +1,24 @@
 package com.example.task03;
 
-public class Task03Main {
-    public static void main(String[] args) {
-        //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        throwCheckedException();
-         */
+import java.io.IOException;
+
+public class Task03Main
+{
+    public static void main(String[] args)
+    {
+        try
+        {
+            throwCheckedException();
+        }
+        catch (Exception e)
+        {
+
+        }
+
     }
 
-    //todo напишите здесь свою корректную реализацию задания
-    public static void throwCheckedException() {
-
+    public static void throwCheckedException() throws IOException
+    {
+        throw new IOException("My Checked Exception");
     }
 }
